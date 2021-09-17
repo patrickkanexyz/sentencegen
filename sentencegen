@@ -1,0 +1,12 @@
+#/usr/bin/bash
+# Generate random sentences.
+
+nouns=(he she it lain)
+verbs=(runs eats sleeps)
+
+echo "${#nouns[@]}"
+
+NOUN="${nouns[RANDOM % ${#nouns[@]}]}"
+VERB="${verbs[RANDOM % ${#verbs[@]}]}"
+
+printf "%s %s.\n" "${NOUN^}" "${VERB}"
