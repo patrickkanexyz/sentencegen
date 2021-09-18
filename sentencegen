@@ -1,4 +1,4 @@
-#/usr/bin/bash
+#!/usr/bin/bash
 # Generate random sentences.
 
 nouns=(he she it lain)
